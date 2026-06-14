@@ -14,7 +14,13 @@ CCCP is a mitochondrial uncoupler that disrupts oxidative phosphorylation and mi
 Data files were downloaded using the European Nucleotide Archive (ENA) database.
 
 # Overview
-This project performs trimming of the data using fastp after the initial analysis of the MultiQc reports.
+This project performs trimming of the data using fastp after the initial analysis of the MultiQc reports. 
+
+Due to temporary VM storage exhaustion during downstream QC, FastQC analysis of trimmed reads could not be completed for all samples.
+
+Trimming quality assessment was therefore performed using Fastp-generated HTML/JSON reports summarized with MultiQC.
+
+Fastp provides comprehensive pre- and post-trimming quality metrics including read retention, adapter removal statistics, quality score distributions, duplication rate estimates, and insert size distributions.
 
 # Workflow
 1. Quality assesment of MultiQC file (from the previous project)
