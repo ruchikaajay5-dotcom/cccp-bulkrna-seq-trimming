@@ -31,6 +31,6 @@ Output:
 multiqc_report.html
 
 # Next Steps
-Read alignment (STAR / HISAT2)
-Gene quantification (featureCounts / Salmon)
-Differential expression analysis (DESeq2 / edgeR)
+- Read alignment (STAR / HISAT2)
+- Gene quantification (featureCounts / Salmon)
+- Differential expression analysis (DESeq2 / edgeR)
