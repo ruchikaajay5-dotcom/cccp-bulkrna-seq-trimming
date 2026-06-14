@@ -1,5 +1,11 @@
+# raw and large data
 data/
+results/trimmed/
 *.fastq.gz
-*.bam
-*.sam
-*.bai
+
+# FastQC heavy outputs
+*_fastqc.zip
+
+# system files
+.DS_Store
+*.log
