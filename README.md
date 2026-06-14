@@ -1,32 +1,46 @@
-# RNA-seq Trimming Pipeline
+# Background:
+CCCP is a mitochondrial uncoupler that disrupts oxidative phosphorylation and mitochondrial membrane potential. This project performs quality assessment of time point based RNA-seq data generated from CCCP-treated and DMSO-treated HeLa cells at two time points 6 hours and 12 hours.
+
+# Dataset:
+- GEO accession: GSE303802 
+- Organism: Homo sapiens 
+- Cell line: HeLa 
+- Platform: Illumina NovaSeq 6000 
+- Layout: Paired-end RNA-seq 
+- Total number of Samples: 12 
+- Replicates per group: 3 
+
+# Downloading the data:
+Data files were downloaded using the European Nucleotide Archive (ENA) database.
 
 # Overview
-This project performs trimming of the data using fastp after the initial analysis of the FASTQc and MultiQc reports.
+This project performs trimming of the data using fastp after the initial analysis of the MultiQc reports.
 
 # Workflow
-Raw FASTQ files
-→ Quality assessment (fastp internal QC)
-→ Adapter trimming + quality filtering using fastp
-→ Generation of fastp reports
-→ Generation of MultiQC reports from fastp reports
+1. Quality assesment of MultiQC file (from the previous project)
+2. Adapter trimming + quality filtering using fastp
+3. Generation of fastp reports
+4. Generation of MultiQC reports from fastp reports
 
 # Tools
-fastp – Read QC, adapter trimming, quality filtering
-MultiQC – Aggregation and visualization of QC metrics across samples
+- Linux Command Line
+- fastp – Read QC, adapter trimming, quality filtering
+- MultiQC – Aggregation and visualization of QC metrics across samples
 
 # Key Processing Steps
 1. Quality Control & Trimming (fastp)
-Adapter removal
-Quality-based base trimming
-Filtering of low-quality and short reads
-Generation of per-sample QC reports (HTML + JSON)
+- Adapter removal
+- Quality-based base trimming
+- Filtering of low-quality and short reads
+- Generation of per-sample QC reports (HTML + JSON)
 
 Outputs:
 Trimmed FASTQ files
 fastp QC reports
 
 2. Aggregated QC Reporting (MultiQC)
-Combined all fastp reports into a unified dataset view 
+- Combined all fastp reports into a unified dataset view
+ 
 Output:
 multiqc_report.html
 
