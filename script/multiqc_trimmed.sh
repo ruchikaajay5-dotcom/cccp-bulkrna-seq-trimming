@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p results/multiqc_trimmed
+mkdir -p results/multiqc_fastp_only
 
-multiqc results/ \
-  -o results/multiqc_trimmed
+multiqc results/fastp_reports \
+  -o results/multiqc_fastp_only
