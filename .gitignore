@@ -1,2 +1,2 @@
-*.fastq.gz
 results/fastq_trimmed/
+*.fastq.gz
