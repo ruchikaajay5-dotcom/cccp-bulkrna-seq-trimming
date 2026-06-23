@@ -92,7 +92,8 @@ Metrics evaluated included:
 - Sequence Length distribution: before trimming, all the reads are uniform 150bp. After trimming, the distribution peak at a region between 140-150 bp, yet still closer to 150bp. This indicates that the low quality tails were trimmed and it resulted in reads being shortened. 
 - Adapter content: before trimming, low adapter contamination was seen at 1-1.5%, after trimming the adapter signal significantly reduced across all positions to ~0.5%.
 
-Overall, the data looks really clean. The library prep was done well, trimming was effective without being too aggressive, and the reads are in good shape for alignment.
+Overall the data looks really clean, the library prep was done well and the trimming was effective enough to remove the low-quality reads and adapter contamination, thus the reads are now in a good shape to proceed towards alignment.
+
 ---
 
 ## Repository Structure
